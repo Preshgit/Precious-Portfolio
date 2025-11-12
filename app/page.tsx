@@ -14,6 +14,7 @@ import {
   Heart,
   Instagram,
 } from 'lucide-react';
+import ContactForm from './components/ContactForm';
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -238,11 +239,14 @@ const Portfolio = () => {
         className='py-20 bg-gradient-to-br from-yellow-50 to-pink-50'
       >
         <div className='max-w-7xl mx-auto px-6'>
-          <div className='flex flex-col lg:flex-row gap-12 items-center'>
+          <h2 className='text-5xl font-black mb-2'>
+            About <span className='text-yellow-400'>Me</span>
+          </h2>
+          <div className='flex flex-col lg:flex-row gap-12 items-center lg:items-stretch min-h-[80vh]'>
             {/* Photo Placeholder */}
 
             <div className='lg:w-1/3 animate-in fade-in slide-in-from-left duration-700'>
-              <div className='relative bg-gradient-to-br from-yellow-300 to-pink-300 rounded-3xl aspect-square shadow-xl overflow-hidden'>
+              <div className='relative bg-gradient-to-br from-yellow-300 to-pink-300 rounded-3xl aspect-square shadow-xl overflow-hidden flex-1'>
                 <img
                   src='/mypics.jpg'
                   alt='My Picture'
@@ -253,35 +257,49 @@ const Portfolio = () => {
 
             {/* About Content */}
             <div className='lg:w-2/3 animate-in fade-in slide-in-from-right duration-700'>
-              <h2 className='text-5xl font-black mb-6'>
-                About <span className='text-yellow-400'>Me</span>
-              </h2>
-
               <div className='space-y-4 text-lg text-gray-700 leading-relaxed'>
                 <p>
-                  Hello! I'm Precious Omotosho, a passionate creative
-                  professional who believes in bringing joy and excellence to
-                  everything I do. My faith guides my work, and I'm driven by a
-                  desire to make a positive impact through thoughtful design and
-                  exceptional support.
+                  Hello! I'm <strong>Precious Omotosho</strong>, a passionate
+                  and purpose-driven creative professional with a heart for
+                  excellence, service, and meaningful impact. My journey began
+                  in the world of
+                  <strong>Architecture Design</strong>, where I earned both my
+                  first and second degrees. Studying architecture didn’t just
+                  shape how I think about structure and aesthetics, it laid the
+                  foundation for my creative career in{' '}
+                  <strong>web and graphic design</strong>, helping me see design
+                  as both art and problem-solving.
                 </p>
+
                 <p>
-                  With a background as an Executive Assistant and experience in
-                  graphics design, web development and creative projects, I help
-                  leaders and organizations achieve their goals while bringing
-                  beautiful, functional solutions to life. I thrive on making
-                  complex tasks simple and turning ideas into reality. I’m
-                  passionate about meaningful work, learning every day, and
-                  bringing energy, order, and a touch of creativity to
-                  everything I do.
+                  Beyond my creative background, I’ve had the privilege of
+                  serving as an
+                  <strong>Executive Assistant</strong> to the proprietress of an
+                  international school for over five years. In this role, I
+                  managed high-level administrative duties, communications, and
+                  project coordination, ensuring efficiency, structure, and
+                  grace in every detail. What brings me the most joy is knowing
+                  that my work, whether in support or design, creates visible
+                  impact for the people and organizations I serve.
                 </p>
-                {/* <br /> I’m a creative and organized professional with a love for
-                design, tech, and helping people bring their visions to life. */}
+
                 <p>
-                  When I'm not working, you'll find me exploring new design
-                  trends, learning new skills, or spending time with loved ones.
-                  I believe that creativity and professionalism go hand in hand,
-                  and I'm always excited to take on new challenges!
+                  I thrive at the intersection of{' '}
+                  <strong>organization, creativity, and service</strong>.
+                  Whether I’m supporting a visionary leader, designing a digital
+                  experience, or coordinating a project from idea to execution,
+                  I approach every task with dedication, integrity, and genuine
+                  enthusiasm. My faith deeply influences my values and work
+                  ethic, guiding me to serve with excellence and compassion in
+                  all I do.
+                </p>
+
+                <p>
+                  When I’m not working, you’ll likely find me exploring new
+                  design trends, learning new tools, or spending time with loved
+                  ones. I believe creativity and professionalism go hand in hand
+                  , and I’m always excited to bring both into every opportunity
+                  to grow, contribute, and make a difference.
                 </p>
               </div>
 
@@ -500,116 +518,8 @@ const Portfolio = () => {
             <h2 className='text-5xl font-black mb-4'>
               Let's <span className='text-yellow-400'>Connect!</span>
             </h2>
-            {/* <p className='text-xl text-gray-600'>
-              Ready to bring your ideas to life? Let's chat!
-            </p> */}
           </div>
-
-          <div className='bg-white rounded-3xl shadow-2xl p-8 md:p-12'>
-            <div className='space-y-6'>
-              <div className='grid md:grid-cols-2 gap-6'>
-                <div>
-                  <label className='block text-sm font-semibold text-gray-700 mb-2'>
-                    Name
-                  </label>
-                  <input
-                    type='text'
-                    className='w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-yellow-400 focus:outline-none transition-colors'
-                    placeholder='Your name'
-                  />
-                </div>
-                <div>
-                  <label className='block text-sm font-semibold text-gray-700 mb-2'>
-                    Email
-                  </label>
-                  <input
-                    type='email'
-                    className='w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-yellow-400 focus:outline-none transition-colors'
-                    placeholder='preciousdesk10@gmail.com'
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className='block text-sm font-semibold text-gray-700 mb-2'>
-                  Message
-                </label>
-                <textarea
-                  rows={6}
-                  className='w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-yellow-400 focus:outline-none transition-colors resize-none'
-                  placeholder='Tell me about your project...'
-                ></textarea>
-              </div>
-
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert('Thank you for your message! This is a demo form.');
-                }}
-                className='w-full bg-gradient-to-r from-yellow-400 to-pink-400 hover:from-yellow-500 hover:to-pink-500 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-105 shadow-lg'
-              >
-                Send Message ✨
-              </button>
-            </div>
-            <div className='flex justify-center gap-6 mt-8'>
-              <a
-                href='mailto:preciousdesk10@gmail.com'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-gray-600 hover:text-yellow-400 transition-colors'
-              >
-                <Mail size={24} />
-              </a>
-
-              <a
-                href='https://www.linkedin.com/in/precious-omotosho/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-gray-600 hover:text-yellow-400 transition-colors'
-              >
-                <Linkedin size={24} />
-              </a>
-
-              <a
-                href='https://github.com/Preshgit'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-gray-600 hover:text-yellow-400 transition-colors'
-              >
-                <Github size={24} />
-              </a>
-
-              <a
-                href='https://www.instagram.com/preciousomotoshot/' // 👈 replace with your actual Instagram username
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-gray-600 hover:text-yellow-400 transition-colors'
-              >
-                <Instagram size={24} />
-              </a>
-            </div>
-
-            {/* <div className='flex justify-center gap-6 mt-8'>
-              <a
-                href='mailto:preciousdesk10@gmail.com'
-                className='text-gray-600 hover:text-yellow-400 transition-colors'
-              >
-                <Mail size={24} />
-              </a>
-              <a
-                href='https://www.linkedin.com/in/precious-omotosho/'
-                className='text-gray-600 hover:text-yellow-400 transition-colors'
-              >
-                <Linkedin size={24} />
-              </a>
-              <a
-                href='https://github.com/Preshgit'
-                className='text-gray-600 hover:text-yellow-400 transition-colors'
-              >
-                <Github size={24} />
-              </a>
-            </div> */}
-          </div>
+          <ContactForm />
         </div>
       </section>
 
