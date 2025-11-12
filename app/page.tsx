@@ -169,11 +169,11 @@ const Portfolio = () => {
         className='min-h-screen relative overflow-hidden pt-20'
       >
         {/* Background Text */}
-        <div className='absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden'>
+        {/* <div className='absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden'>
           <div className='text-[20vw] font-black text-yellow-100 opacity-50 animate-pulse'>
             CREATE
           </div>
-        </div>
+        </div> */}
 
         <div className='relative max-w-7xl mx-auto px-6 md:py-12 lg:py-20 flex flex-col md:flex-row items-center justify-between min-h-screen'>
           {/* Text Content */}
@@ -239,7 +239,7 @@ const Portfolio = () => {
         className='py-20 bg-gradient-to-br from-yellow-50 to-pink-50'
       >
         <div className='max-w-7xl mx-auto px-6'>
-          <h2 className='text-5xl font-black mb-2'>
+          <h2 className='md:text-5xl lg:text-6xl font-black mb-4'>
             About <span className='text-yellow-400'>Me</span>
           </h2>
           <div className='flex flex-col lg:flex-row gap-12 items-center lg:items-stretch min-h-[80vh]'>
