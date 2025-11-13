@@ -120,7 +120,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                   <img
                     src={project.image}
                     alt={project.title}
-                    className='w-full h-full object-contain p-4'
+                    className='w-full h-full object-cover p-4 object-top'
                   />
                 ) : (
                   <div
@@ -206,7 +206,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                     <img
                       src={selectedGraphic.image}
                       alt={selectedGraphic.title}
-                      className='max-w-full h-auto max-h-[500px] object-contain rounded-lg shadow-lg'
+                      className='max-w-full h-auto max-h-[500px] object-cover rounded-lg shadow-lg'
                     />
                   </div>
                 )}
@@ -223,7 +223,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                           <img
                             src={img}
                             alt={`${selectedGraphic.title} - ${idx + 1}`}
-                            className='max-w-full h-auto max-h-[400px] object-contain rounded-lg shadow-md'
+                            className='max-w-full h-auto max-h-[400px] object-cover rounded-lg shadow-md'
                           />
                         </div>
                       ))}
