@@ -205,11 +205,11 @@ const Portfolio = () => {
               <div className='absolute -inset-4 bg-gradient-to-r from-yellow-400 to-pink-500 rounded-3xl blur-2xl opacity-30 animate-pulse'></div>
 
               {/* Image container */}
-              <div className='relative bg-gradient-to-br from-yellow-200 to-pink-200 rounded-3xl aspect-[3/4] lg:aspect-[3/4] h-96 sm:h-[28rem] shadow-2xl overflow-hidden'>
+              <div className='relative bg-gradient-to-br from-yellow-200 to-pink-200 rounded-3xl aspect-[3/4] h-96 sm:h-[28rem] lg:w-full shadow-2xl overflow-hidden'>
                 <img
                   src='/mypics3.png'
                   alt='My Picture'
-                  className='absolute inset-0 w-full h-full object-cover object-top transform scale-x-[-1]'
+                  className='absolute inset-0 w-full h-full object-cover transform scale-x-[-1] lg:w-full lg:pt-8'
                 />
               </div>
             </div>
@@ -404,7 +404,8 @@ const Portfolio = () => {
               My <span className='text-yellow-400'>Portfolio</span>
             </h2>
             <p className='text-xl text-gray-600'>
-              Creative projects that bring ideas to life
+              A selection of the works in which I have carried out from the
+              creative side, both as a designer and developer.
             </p>
           </div>
 
