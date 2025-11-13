@@ -73,9 +73,9 @@ const Portfolio = () => {
       image: '/dpp.png', // optional
     },
     {
-      title: 'Business Dashboard',
+      title: 'African Art Museum',
       category: 'Web Development' as const,
-      description: 'Analytics dashboard with real-time data',
+      description: 'Modern responsive website with animations',
       color: 'bg-green-100',
       liveLink: 'https://alx-capstone-project-woad.vercel.app/',
       image: '/art.png',
