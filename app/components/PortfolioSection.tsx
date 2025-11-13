@@ -120,7 +120,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                   <img
                     src={project.image}
                     alt={project.title}
-                    className='w-full h-full object-cover p-4 object-top'
+                    className='w-full h-full object-cover p-2 object-top'
                   />
                 ) : (
                   <div

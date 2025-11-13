@@ -105,6 +105,7 @@ const Portfolio = () => {
         '6a.png',
         '7a.png',
         'b.png',
+        '/letterhead1.png',
       ], // Additional images shown in modal
     },
     {
