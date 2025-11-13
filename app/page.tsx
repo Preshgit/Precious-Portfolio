@@ -85,19 +85,15 @@ const Portfolio = () => {
   const skills = [
     'Executive Support & Administrative Management',
     'Calendar & Schedule Optimization',
-    'Email & Communication Management',
-    'Meeting Coordination & Minutes Taking',
-    'Travel & Logistics Planning',
+    'Design & Branding (Canva, capcut, Figma)',
+    'Problem Solving & Critical Thinking',
     'Project Coordination & Workflow Tracking',
     'Documentation & File Management',
     'Stakeholder & Client Communication',
+    'Email & Communication Management',
+    'Meeting Coordination & Minutes Taking',
     'Event Planning & Team Coordination',
-    'Problem Solving & Critical Thinking',
-    'Confidentiality & Discretion',
-    'Time Management & Prioritization',
     'Creative Thinking & Initiative',
-    'Basic Design & Branding (Canva, Figma)',
-    'Social Media Coordination',
     'Technical Skills (HTML, CSS, React.js)',
     'Strong Work Ethic & Integrity',
     'Adaptability & Continuous Learning',
@@ -168,13 +164,6 @@ const Portfolio = () => {
         id='home'
         className='min-h-screen relative overflow-hidden pt-20'
       >
-        {/* Background Text */}
-        {/* <div className='absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden'>
-          <div className='text-[20vw] font-black text-yellow-100 opacity-50 animate-pulse'>
-            CREATE
-          </div>
-        </div> */}
-
         <div className='relative max-w-7xl mx-auto px-6 md:py-12 lg:py-20 flex flex-col md:flex-row items-center justify-between min-h-screen'>
           {/* Text Content */}
           <div className='lg:w-1/2 z-10 space-y-6 animate-in fade-in slide-in-from-left duration-1000'>
@@ -239,10 +228,10 @@ const Portfolio = () => {
         className='py-20 bg-gradient-to-br from-yellow-50 to-pink-50'
       >
         <div className='max-w-7xl mx-auto px-6'>
-          <h2 className='md:text-5xl lg:text-6xl font-black mb-4'>
+          <h2 className='text-5xl lg:text-6xl font-black mb-0 lg:mb-4'>
             About <span className='text-yellow-400'>Me</span>
           </h2>
-          <div className='flex flex-col lg:flex-row gap-12 items-center lg:items-stretch min-h-[80vh]'>
+          <div className='flex flex-col lg:flex-row gap-4 lg:gap-12 items-center lg:items-stretch min-h-[80vh]'>
             {/* Photo Placeholder */}
 
             <div className='lg:w-1/3 animate-in fade-in slide-in-from-left duration-700'>
@@ -262,25 +251,24 @@ const Portfolio = () => {
                   Hello! I'm <strong>Precious Omotosho</strong>, a passionate
                   and purpose-driven creative professional with a heart for
                   excellence, service, and meaningful impact. My journey began
-                  in the world of
-                  <strong>Architecture Design</strong>, where I earned both my
-                  first and second degrees. Studying architecture didn’t just
-                  shape how I think about structure and aesthetics, it laid the
-                  foundation for my creative career in{' '}
+                  in the world of <strong>Architecture Design</strong>, where I
+                  earned both my first and second degrees. Studying architecture
+                  didn’t just shape how I think about structure and aesthetics,
+                  it laid the foundation for my creative career in{' '}
                   <strong>web and graphic design</strong>, helping me see design
                   as both art and problem-solving.
                 </p>
 
                 <p>
                   Beyond my creative background, I’ve had the privilege of
-                  serving as an
-                  <strong>Executive Assistant</strong> to the proprietress of an
-                  international school for over five years. In this role, I
-                  managed high-level administrative duties, communications, and
-                  project coordination, ensuring efficiency, structure, and
-                  grace in every detail. What brings me the most joy is knowing
-                  that my work, whether in support or design, creates visible
-                  impact for the people and organizations I serve.
+                  serving as an <strong>Executive Assistant</strong> to the
+                  proprietress of an international school for over five years.
+                  In this role, I managed high-level administrative duties,
+                  communications, and project coordination, ensuring efficiency,
+                  structure, and grace in every detail. What brings me the most
+                  joy is knowing that my work, whether in support or design,
+                  creates visible impact for the people and organizations I
+                  serve.
                 </p>
 
                 <p>
@@ -339,16 +327,7 @@ const Portfolio = () => {
             <div className='bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2'>
               <Briefcase className='text-yellow-400 mb-4' size={40} />
               <h3 className='text-2xl font-bold mb-2'>Executive Assistant</h3>
-              {/* <p className='text-gray-600 mb-4'>
-                Supporting C-suite executives and leadership teams
-              </p>
-              <ul className='space-y-2 text-gray-700'>
-                <li>• Calendar & schedule optimization</li>
-                <li>• Meeting coordination & preparation</li>
-                <li>• Travel arrangements & logistics</li>
-                <li>• Project management support</li>
-                <li>• Communication & correspondence</li>
-              </ul> */}
+
               <p className='text-gray-600 mb-4'>
                 Dedicated Executive Assistant with 5+ years’ experience
                 providing high-level administrative, creative, and technical
