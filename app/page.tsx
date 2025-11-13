@@ -84,47 +84,47 @@ const Portfolio = () => {
 
   const graphicProjects = [
     {
-      title: 'Brand Identity',
-      category: 'Graphic Design' as const,
-      description: 'Complete visual identity for tech startup',
-      color: 'bg-pink-100',
-      image: '/letterhead.png', // optional
-    },
-    {
       title: 'Social Media Designs',
       category: 'Graphic Design' as const,
       description: 'Instagram templates and story designs',
       color: 'bg-yellow-100',
-      image: '/1.png',
-    },
-    // Add more graphic projects...
-  ];
-
-  const projects = [
-    {
-      title: 'Brand Identity Design',
-      category: 'Graphic Design',
-      description: 'Complete visual identity system for modern startups',
-      color: 'bg-yellow-100',
+      image: 'a.jpg',
+      galleryImages: ['a.jpg', 'aa.png', 'c.png', 'd.jpg'],
     },
     {
-      title: 'E-commerce Platform',
-      category: 'Web Design',
-      description: 'Responsive online store with seamless UX',
+      title: 'Brand Identity',
+      category: 'Graphic Design' as const,
+      description: ' Graphics visual identity',
       color: 'bg-pink-100',
+      image: '/letterhead.png', // optional
+      galleryImages: [
+        '2a.png',
+        '3a.png',
+        '4a.png',
+        '5a.png',
+        '6a.png',
+        '7a.png',
+        'b.png',
+      ], // Additional images shown in modal
     },
     {
       title: 'Social Media Campaign',
-      category: 'Graphic Design',
+      category: 'Graphic Design' as const,
       description: 'Engaging visual content for brand awareness',
-      color: 'bg-purple-100',
-    },
-    {
-      title: 'Corporate Website',
-      category: 'Web Design',
-      description: 'Professional site with modern animations',
       color: 'bg-blue-100',
+      image: '/1.png',
+      galleryImages: [
+        // Additional images shown in modal
+        '/2.png',
+        '/3.png',
+        '/4.png',
+        '/5.png',
+        '/6.png',
+        '/7.png',
+        '/8.png',
+      ],
     },
+    // Add more graphic projects...
   ];
 
   const skills = [
