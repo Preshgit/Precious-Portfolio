@@ -15,6 +15,7 @@ import {
   Instagram,
 } from 'lucide-react';
 import ContactForm from './components/ContactForm';
+import PortfolioSection from './components/PortfolioSection';
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,6 +55,50 @@ const Portfolio = () => {
       setIsMenuOpen(false);
     }
   };
+  const webProjects = [
+    {
+      title: 'Business Landing Page',
+      category: 'Web Development' as const,
+      description: 'Full-stack online store with payment integration',
+      color: 'bg-blue-100',
+      liveLink: 'https://thom-ark.vercel.app/',
+      image: '/thomark.png', // optional
+    },
+    {
+      title: 'Portfolio Website',
+      category: 'Web Development' as const,
+      description: 'Modern responsive portfolio with animations',
+      color: 'bg-purple-100',
+      liveLink: 'https://oyeyemi-deborah-portfolio.vercel.app/about',
+      image: '/dpp.png', // optional
+    },
+    {
+      title: 'Business Dashboard',
+      category: 'Web Development' as const,
+      description: 'Analytics dashboard with real-time data',
+      color: 'bg-green-100',
+      liveLink: 'https://alx-capstone-project-woad.vercel.app/',
+      image: '/art.png',
+    },
+  ];
+
+  const graphicProjects = [
+    {
+      title: 'Brand Identity',
+      category: 'Graphic Design' as const,
+      description: 'Complete visual identity for tech startup',
+      color: 'bg-pink-100',
+      image: '/letterhead.png', // optional
+    },
+    {
+      title: 'Social Media Designs',
+      category: 'Graphic Design' as const,
+      description: 'Instagram templates and story designs',
+      color: 'bg-yellow-100',
+      image: '/1.png',
+    },
+    // Add more graphic projects...
+  ];
 
   const projects = [
     {
@@ -394,7 +439,11 @@ const Portfolio = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section
+      <PortfolioSection
+        webProjects={webProjects}
+        graphicProjects={graphicProjects}
+      />
+      {/* <section
         id='portfolio'
         className='py-20 bg-gradient-to-br from-purple-50 to-blue-50'
       >
@@ -434,7 +483,7 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Education Section */}
       <section id='education' className='py-20 bg-white'>
